@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enbed Audio & Video</title>
+</head>
+<body>
+
+  <h1>Video</h1>
+  <video id="myVideo" src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+      Your browser does not support the format.
+  </video>
+
+  <h1>Audio</h1>
+  <audio id = "myAudio" src="http://www.freesound.org/data/previews/95/95026_57789-lq.mp3" controls>
+      Your browser does not support the format.
+  </audio>
+
+  <div>
+    <button onclick="document.getElementById('myAudio').play()">Play</button>
+    <button onclick="document.getElementById('myAudio').pause()">Pause</button>
+    <button onclick="document.getElementById('myAudio').volume += 0.1">+ Volume</button>
+    <button onclick="document.getElementById('myAudio').volume -= 0.1">- Volume</button>
+  </div>
+
+
+  <!-- We can use java script to control these videos and audios -->
+
+  <!-- below we don't have the auto play own but our script below will autoplay the video when we refresh the page
+        we can also create our own buttons to play and stop-->
+  <script>
+    //uncomment below lines if you want to video to play
+    //var variable = document.getElementById('myVideo')
+    //variable.play();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+ss
