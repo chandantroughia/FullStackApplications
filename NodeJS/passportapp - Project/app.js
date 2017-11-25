@@ -69,6 +69,16 @@ var flash = require('connect-flash');
     next();
   });
 
+
+  //we gonna create a global variable so that we can access the user information
+  //and we are using middleware to do so, route to everything
+  app.get('*', function(req, res, next){
+    res.locals.user = req.user || null;
+    next();
+  })
+
+
+
   // Define Routes
   app.use('/', routes);
   app.use('/users', users);
